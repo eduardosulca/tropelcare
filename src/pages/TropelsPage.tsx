@@ -38,7 +38,7 @@ export default function TropelsPage() {
           setLoading(false);
         }
       })
-      .catch(err => {
+      .catch(() => {
         if (!controller.signal.aborted) {
           setError('Error al cargar tropeles');
           setLoading(false);
